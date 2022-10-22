@@ -1,0 +1,311 @@
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo
+$ ls
+Historia.txt
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo
+$ git init
+Initialized empty Git repository in C:/Users/CIMO/Documents/DEVF/Ejemplo/.git/
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Historia.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git add "Historia.txt"
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Historia.txt
+
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git commit -m "Agregando archivo"
+[master (root-commit) e0bf801] Agregando archivo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Historia.txt
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git log
+commit e0bf801627b4aef8e3ae205eaa054f0a9f553dd0 (HEAD -> master)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:05:05 2022 -0500
+
+    Agregando archivo
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Historia.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git add .
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Historia.txt
+
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git commit -m "puse mi nombre"
+[master 39273dc] puse mi nombre
+ 1 file changed, 1 insertion(+)
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git satatus
+git: 'satatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git log
+commit 39273dce1729f50b310ca93f2d0c9b8070d77c6f (HEAD -> master)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:08:55 2022 -0500
+
+    puse mi nombre
+
+commit e0bf801627b4aef8e3ae205eaa054f0a9f553dd0
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:05:05 2022 -0500
+
+    Agregando archivo
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git commit -m "Puse mi aniumal favorito"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Historia.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git add .
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Historia.txt
+
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git log
+commit 39273dce1729f50b310ca93f2d0c9b8070d77c6f (HEAD -> master)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:08:55 2022 -0500
+
+    puse mi nombre
+
+commit e0bf801627b4aef8e3ae205eaa054f0a9f553dd0
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:05:05 2022 -0500
+
+    Agregando archivo
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ ^C
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git commit -m "Puse mi animal Favorito"
+[master 3949c2f] Puse mi animal Favorito
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git log
+commit 3949c2f038a3c4cc9cc6235b971e4dc8ba266002 (HEAD -> master)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:16:24 2022 -0500
+
+    Puse mi animal Favorito
+
+commit 39273dce1729f50b310ca93f2d0c9b8070d77c6f
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:08:55 2022 -0500
+
+    puse mi nombre
+
+commit e0bf801627b4aef8e3ae205eaa054f0a9f553dd0
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:05:05 2022 -0500
+
+    Agregando archivo
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git checkout^C
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo (master)
+$ git checkout 39273dce1729f50b310ca93f2d0c9b8070d77c6f
+Note: switching to '39273dce1729f50b310ca93f2d0c9b8070d77c6f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 39273dc puse mi nombre
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((39273dc...))
+$ git checkout 39273dce1729f50b310ca93f2d0c9b8070d77c6f
+HEAD is now at 39273dc puse mi nombre
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((39273dc...))
+$ git checkout 3949c2f038a3c4cc9cc6235b971e4dc8ba266002
+Previous HEAD position was 39273dc puse mi nombre
+HEAD is now at 3949c2f Puse mi animal Favorito
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ echo mateo.psd
+mateo.psd
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ echo mateo.txt
+mateo.txt
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ echo "mateo.psd"
+mateo.psd
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ echo "mateo.txt"
+mateo.txt
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ echo "ejemplo.txt"
+ejemplo.txt
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ ls
+Historia.txt
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ cat "hola.txt"
+cat: hola.txt: No such file or directory
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ touch "mateo.psd"
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ git add .
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ git log
+commit 3949c2f038a3c4cc9cc6235b971e4dc8ba266002 (HEAD, master)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:16:24 2022 -0500
+
+    Puse mi animal Favorito
+
+commit 39273dce1729f50b310ca93f2d0c9b8070d77c6f
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:08:55 2022 -0500
+
+    puse mi nombre
+
+commit e0bf801627b4aef8e3ae205eaa054f0a9f553dd0
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:05:05 2022 -0500
+
+    Agregando archivo
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ git status
+HEAD detached at 3949c2f
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mateo.psd
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Historia.txt
+
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ git add .
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((3949c2f...))
+$ git commit -m "cambie mi animal favorito"
+[detached HEAD 4056570] cambie mi animal favorito
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 mateo.psd
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((4056570...))
+$ dit add .
+bash: dit: command not found
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((4056570...))
+$ git add .
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((4056570...))
+$ git log
+commit 40565707f564f00cc31370e18eb242489a09f695 (HEAD)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 18:12:22 2022 -0500
+
+    cambie mi animal favorito
+
+commit 3949c2f038a3c4cc9cc6235b971e4dc8ba266002 (master)
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:16:24 2022 -0500
+
+    Puse mi animal Favorito
+
+commit 39273dce1729f50b310ca93f2d0c9b8070d77c6f
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:08:55 2022 -0500
+
+    puse mi nombre
+
+commit e0bf801627b4aef8e3ae205eaa054f0a9f553dd0
+Author: Mateo Pantoja <mateo1985_9@hotmail.com>
+Date:   Sat Oct 22 15:05:05 2022 -0500
+
+    Agregando archivo
+
+CIMO@SERVIDOR MINGW64 ~/documents/DEVF/ejemplo ((4056570...))
+$
